@@ -8,9 +8,10 @@ super minimal flask app for storing high scores on a server. No databases needed
 
 `GET /viewScores` => HTML view of high scores
 
-`POST /submit` (name, score, secretToken) => Adds to the highscore list. Secret token for a thin layer of security. May consider adding captcha
+`POST /submit` (name, score, secretToken) => Adds to the highscore list. Secret token for a thin layer of security. May consider adding captcha for to prevent spambotting.
 
 ### App settings:
 
-`LIST_SIZE` (default: 100) How many scores you want to keep max
+`LIST_SIZE` (default: 100) How many scores you want to keep, max
+
 `SECRET_TOKEN` A token that you have to include when submitting scores to the API
